@@ -1,0 +1,132 @@
+{
+  "jackpots": [
+    {
+      "id": "1",
+      "name": "Daily",
+      "address": "192.168.101.255",
+      "port": "12301"
+    },
+    {
+      "id": "2",
+      "name": "Dozen",
+      "address": "192.168.101.255",
+      "port": "12302"
+    },
+    {
+      "id": "3",
+      "name": "Weekly",
+      "address": "192.168.101.255",
+      "port": "12303"
+    },
+    {
+      "id": "4",
+      "name": "Vegas",
+      "address": "192.168.101.255",
+      "port": "12304"
+    },
+    {
+      "id": "18",
+      "name": "HIGH LIMIT",
+      "address": "192.168.101.255",
+      "port": "12305"
+    },
+    {
+      "id": "34",
+      "name": "Daily Golden",
+      "address": "192.168.101.255",
+      "port": "12306"
+    },
+    {
+      "id": "35",
+      "name": "Triple",
+      "address": "192.168.101.255",
+      "port": "12307"
+    },
+    {
+      "id": "40",
+      "name": "Grand Spin JP",
+      "address": "192.168.101.255",
+      "port": "12308"
+    },
+    {
+      "id": "41",
+      "name": "Major Spin JP",
+      "address": "192.168.101.255",
+      "port": "12309"
+    },
+    {
+      "id": "42",
+      "name": "Vegas Spin JP",
+      "address": "192.168.101.255",
+      "port": "12310"
+    },
+    {
+      "id": "0",
+      "name": "Frequent",
+      "address": "192.168.101.255",
+      "port": "12300"
+    },
+    {
+      "id": "43",
+      "name": "Vegas Spin  JP",
+      "address": "192.168.101.255",
+      "port": "12311"
+    },
+    {
+      "id": "99",
+      "name": "Unknown Jackpot",
+      "address": "192.168.101.255",
+      "port": "12312"
+    },
+    {
+      "id": "46",
+      "name": "Unknown Jackpot 46",
+      "address": "192.168.101.255",
+      "port": "12313"
+    },
+    {
+      "id": "45",
+      "name": "Unknown Jackpot 45",
+      "address": "192.168.101.255",
+      "port": "12314"
+    }
+  ],
+  "hotseats": [
+    {
+      "id": "97",
+      "name": "Ppochi 2024 -Mon-Fri-18 times (16-2)",
+      "address": "192.168.101.255",
+      "port": "12400"
+    },
+    {
+      "id": "88",
+      "name": "1000 - July 2022 - 1st",
+      "address": "192.168.101.255",
+      "port": "12401"
+    },
+    {
+      "id": "89",
+      "name": "1000 - July 2022 - 2nd",
+      "address": "192.168.101.255",
+      "port": "12402"
+    },
+    {
+      "id": "80",
+      "name": "777 - JAN 2022 - 13 times - 1st",
+      "address": "192.168.101.255",
+      "port": "12403"
+    },
+    {
+      "id": "98",
+      "name": "Ppochi 2024 - SAT-SUN 33 times (16-2)",
+      "address": "192.168.101.255",
+      "port": "12404"
+    },
+    {
+      "id": "81",
+      "name": "777- JAN 2022 - 13 times - 2nd",
+      "address": "192.168.101.255",
+      "port": "12405"
+    }
+  ]
+}

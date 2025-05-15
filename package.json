@@ -1,0 +1,32 @@
+{
+  "name": "playtech_transmitter",
+  "version": "1.0.4",
+  "description": "Playtech Transmitter",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaMorpheuS/playtech_transmitter.git"
+  },
+  "author": "Ruben Kaper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaMorpheuS/playtech_transmitter/issues"
+  },
+  "homepage": "https://github.com/DaMorpheuS/playtech_transmitter#readme",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^4.18.2",
+    "faye-websocket": "^0.11.4",
+    "http": "^0.0.1-security",
+    "nconf": "^0.12.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.1",
+    "wscat": "^6.1.0",
+    "xml2js": "^0.6.2",
+    "zeromq": "^6.0.0-beta.19"
+  }
+}
