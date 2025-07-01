@@ -16,6 +16,6 @@ const HitSchema = new mongoose.Schema({
 HitSchema.index({ jackpotId: 1, type: 1, timestamp: -1 });
 
 // Apply auto-increment plugin for hitId
-HitSchema.plugin(AutoIncrement, { inc_field: 'hitId' });
+// HitSchema.plugin(AutoIncrement, { inc_field: 'hitId' });
 
 module.exports = mongoose.model('Hits', HitSchema);
