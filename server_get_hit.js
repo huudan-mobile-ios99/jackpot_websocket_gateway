@@ -8,6 +8,8 @@ const parser = new xml2js.Parser();
 const mongoose = require('mongoose');
 const crypto = require('crypto');
 
+//add logger to main get hit
+const { ensureLogDirectory, logHitToFile } = require('./utils/logger');
 
 const { connectDB } = require('./mongdb_config');
 const { initializeCleanup } = require('./server_cleanup');
@@ -23,7 +25,7 @@ async function initializeServer() {
   });
   await connectDB();
   // Pass the mongoose instance to cleanup.js
-  // initializeCleanup(mongoose);
+  initializeCleanup(mongoose);
 }
 
 // Load models after connection
@@ -170,6 +172,7 @@ function readXML(msg) {
             return;
           }
           await HitModel.create(jackpotData);
+          await logHitToFile(jackpotData);// ← This does everything (file + console)
           console.log(`Saved new Jackpot hit: ID=${jackpotData.jackpotId}`);
         } catch (error) {
           if (error.code === 11000) {
@@ -274,6 +277,7 @@ function readXML(msg) {
             return;
           }
           await HitModel.create(hotSeatData);
+          await logHitToFile(hotSeatData);
           console.log(`Saved new HotSeat hit: ID=${hotSeatData.jackpotId}`);
         } catch (error) {
           if (error.code === 11000) {
@@ -293,7 +297,8 @@ async function startServerAndPublishData() {
   try {
     console.log('JP Desktop HIT Server:', softwareVersion);
     await loadLastEndpointIndex(); // Load last successful endpoint
-    initializeServer();
+    await initializeServer();
+    await ensureLogDirectory();
     await connect();
   } catch (error) {
     console.error('Error starting server:', error);

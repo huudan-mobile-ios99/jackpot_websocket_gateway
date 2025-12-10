@@ -5,7 +5,7 @@ async function initializeCleanup(mongoose) {
     const InfoModel = require('./model/information_model');
     const HitModel = require('./model/hit_model');
     // Schedule cleanup job to run every 30 minutes
-    schedule.scheduleJob('*/30 * * * *', async () => {
+    schedule.scheduleJob('*/45 * * * *', async () => {
       try {
         if (mongoose.connection.readyState !== 1) {
           console.warn('⚠️ DB not connected. Skipping cleanup...');
@@ -47,7 +47,7 @@ async function initializeCleanup(mongoose) {
       }
     });
 
-    console.log('⏳ Cleanup job scheduled every 30 minutes');
+    console.log('⏳ Cleanup job scheduled every 45 minutes');
 
   } catch (error) {
     console.error('❌ Failed to initialize cleanup:', error);

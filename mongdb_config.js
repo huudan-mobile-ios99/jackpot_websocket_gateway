@@ -1,15 +1,12 @@
 
 // "use strict";
-
 // const mongoose = require('mongoose');
 // const AutoIncrementFactory = require('mongoose-sequence');
-
 // const username = "LeHuuDan99";
 // const password = "3lyIxDXEzwCtzw2i";
 // const database = "JPDesktop_Hit";
 // const URL = `mongodb+srv://${username}:${password}@clustervegas.ym3zd.mongodb.net/${database}?retryWrites=true&w=majority`;
 // const DB_OPTIONS = {
-
 // };
 
 // // 🔥 Use createConnection for AutoIncrement
@@ -91,6 +88,17 @@ const AutoIncrementFactory = require("mongoose-sequence");
 
 
 
+
+
+
+
+
+// const username = "huudanstorage_db_user";
+// const password = "VouZvBqdKLuxiVtS";
+// const database = "JPDesktop";
+// const URL = `mongodb+srv://${username}:${password}@cluster0.qpzcnil.mongodb.net/${database}?retryWrites=true&w=majority&appName=Cluster0`;
+
+
 const username = "lehuudan99";
 const password = "iYMlvnLT5GxsNL0f";
 const database = "JPDesktop1";
@@ -116,7 +124,6 @@ async function connectDB() {
 
     // 👇 INIT AUTO INCREMENT PLUGIN (after connect)
     AutoIncrement = AutoIncrementFactory(mongoose);
-
     console.log("✅ Connected to MongoDB JPDesktop SUB");
 
     // Optional: Start a heartbeat ping
